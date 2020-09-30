@@ -5,21 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Float and Flex</title>
 
-    <!-- Float -->
+    <!-- General Style -->
     <style>
-        .float-container {
+        .container {
             width: 80%;
             /* Center it by pushing same amount right and left */
             margin: 1rem auto;
             /* Give space content to border space */
             padding: 60px;
-            background-color: #f1f1f1;
+        }
+
+        .bg-grey {
+            background-color: #d6dedf;
+        }
+
+        .bg-blue {
+            background-color: #89cad3;
         }
 
         h2 {
             text-align: center;
         }
+    </style>
 
+    <!-- Float -->
+    <style>
         .float-navbar {
             list-style: none;
             padding: 0;
@@ -54,15 +64,6 @@
 
     <!-- Flex -->
     <style>
-        .flex-container {
-            width: 80%;
-            /* Center it by pushing same amount right and left */
-            margin: 0 auto;
-            /* Give space content to border space */
-            padding: 60px;
-            background-color: #b2dee4;
-        }
-
         .flex-navbar {
             display: flex;
             justify-content: space-around;
@@ -78,15 +79,11 @@
         .flex-navbar a:hover {
             color: green;
         }
-
-        h2 {
-            text-align: center;
-        }
     </style>
 </head>
 
 <body>
-    <section class="float-container">
+    <section class="container bg-grey">
         <h2>Float Way</h2>
         <ul class="float-navbar">
             <li><a href="#">Link 1</a></li>
@@ -97,7 +94,7 @@
         </ul>
     </section>
 
-    <section class="flex-container">
+    <section class="container bg-blue">
         <h2>Flex Way</h2>
         <div class="flex-navbar">
             <a href="#">Link 1</a>
