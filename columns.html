@@ -1,0 +1,176 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Flex</title>
+
+    <!-- Float -->
+    <style>
+        .float-container {
+            width: 80%;
+            /* Center it by pushing same amount right and left */
+            margin: 1rem auto;
+            /* Give space content to border space */
+            padding: 60px;
+            background-color: #f1f1f1;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .float-column {
+            width: 30%;
+            margin-right: 2%;
+            float: left;
+        }
+
+        .clearfix::after {
+            display: table;
+            content: '';
+            clear: both;
+        }
+    </style>
+
+    <!-- Flex -->
+    <style>
+        .flex-container {
+            width: 80%;
+            /* Center it by pushing same amount right and left */
+            margin: 0 auto;
+            /* Give space content to border space */
+            padding: 60px;
+            background-color: #b2dee4;
+        }
+
+        .flex-wrapper {
+            display: flex;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .flex-column {
+            width: 30%;
+            margin-right: 2%;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Float -->
+    <section class="float-container clearfix">
+        <h2>Float Way</h2>
+        <p class="float-column">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non natus
+            aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa nesciunt
+            corporis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+            natus
+            aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa nesciunt
+            corporis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+            natus
+            aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa nesciunt
+            corporis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+            natus
+            aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa nesciunt
+            corporis.
+        </p>
+        <p class="float-column">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non natus
+            aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa nesciunt
+            corporis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+            natus
+            aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa nesciunt
+            corporis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+            natus
+            aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa nesciunt
+            corporis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+            natus
+            aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa nesciunt
+            corporis.
+        </p>
+        <p class="float-column">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non natus
+            aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa nesciunt
+            corporis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+            natus
+            aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa nesciunt
+            corporis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+            natus
+            aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa nesciunt
+            corporis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+            natus
+            aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa nesciunt
+            corporis.
+        </p>
+    </section>
+
+    <!-- Flex -->
+    <section class="flex-container">
+        <h2>Flex Way</h2>
+        <div class="flex-wrapper">
+            <p class="flex-column">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non natus
+                aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa
+                nesciunt
+                corporis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+                natus
+                aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa
+                nesciunt
+                corporis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+                natus
+                aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa
+                nesciunt
+                corporis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit,
+                non
+                natus
+                aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa
+                nesciunt
+                corporis.
+            </p>
+            <p class="flex-column">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non natus
+                aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa
+                nesciunt
+                corporis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+                natus
+                aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa
+                nesciunt
+                corporis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+                natus
+                aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa
+                nesciunt
+                corporis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit,
+                non
+                natus
+                aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa
+                nesciunt
+                corporis.
+            </p>
+            <p class="flex-column">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non natus
+                aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa
+                nesciunt
+                corporis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+                natus
+                aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa
+                nesciunt
+                corporis.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit, non
+                natus
+                aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa
+                nesciunt
+                corporis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, blanditiis illo, a sit,
+                non
+                natus
+                aliquid ad consectetur officia reiciendis totam officiis fugit cupiditate. Illo fugit autem ipsa
+                nesciunt
+                corporis.
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>

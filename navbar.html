@@ -1,0 +1,112 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Flex</title>
+
+    <!-- Float -->
+    <style>
+        .float-container {
+            width: 80%;
+            /* Center it by pushing same amount right and left */
+            margin: 1rem auto;
+            /* Give space content to border space */
+            padding: 60px;
+            background-color: #f1f1f1;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .float-navbar {
+            list-style: none;
+            padding: 0;
+            /* overflow: auto; */
+        }
+
+        .float-navbar li {
+            float: left;
+            /* Need to calculate the width by hand */
+            width: calc(100%/5);
+        }
+
+        .float-navbar a {
+            text-decoration: none;
+            color: #262626;
+            display: block;
+            text-align: center;
+            /* background-color: aqua; */
+            /* margin-right: 5px; */
+        }
+
+        .float-navbar a:hover {
+            color: green;
+        }
+
+        /* .clearfix::after {
+            display: table;
+            content: '';
+            clear: both;
+        } */
+    </style>
+
+    <!-- Flex -->
+    <style>
+        .flex-container {
+            width: 80%;
+            /* Center it by pushing same amount right and left */
+            margin: 0 auto;
+            /* Give space content to border space */
+            padding: 60px;
+            background-color: #b2dee4;
+        }
+
+        .flex-navbar {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .flex-navbar a {
+            text-decoration: none;
+            color: #262626;
+            text-align: center;
+            flex: 1;
+        }
+
+        .flex-navbar a:hover {
+            color: green;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="float-container">
+        <h2>Float Way</h2>
+        <ul class="float-navbar">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ul>
+    </section>
+
+    <section class="flex-container">
+        <h2>Flex Way</h2>
+        <div class="flex-navbar">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </div>
+    </section>
+</body>
+
+</html>
